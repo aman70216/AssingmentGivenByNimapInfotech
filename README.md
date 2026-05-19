@@ -16,7 +16,7 @@ It includes:
 Repo Link:
 
 ```bash
-https://github.com/aman70216/AssingmentGivenByNimapInfotech
+git clone https://github.com/aman70216/AssingmentGivenByNimapInfotech.git
 ```
 
 ---
