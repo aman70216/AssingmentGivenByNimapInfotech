@@ -144,11 +144,11 @@ One-to-Many
 
 | Method | Endpoint |
 |---|---|
-| GET | /api/categories |
+| GET | http://127.0.0.1:8000/api/categories |
 | POST | /api/categories |
-| GET | /api/categories/{id} |
-| PUT | /api/categories/{id} |
-| DELETE | /api/categories/{id} |
+| GET | http://127.0.0.1:8000/api/categories/{id} |
+| PUT | http://127.0.0.1:8000/api/categories/{id} |
+| DELETE | http://127.0.0.1:8000/api/categories/{id} |
 
 ---
 
@@ -156,11 +156,11 @@ One-to-Many
 
 | Method | Endpoint |
 |---|---|
-| GET | /api/products |
-| POST | /api/products |
-| GET | /api/products/{id} |
-| PUT | /api/products/{id} |
-| DELETE | /api/products/{id} |
+| GET | http://127.0.0.1:8000/api/products |
+| POST | http://127.0.0.1:8000/api/products |
+| GET | http://127.0.0.1:8000/api/products/{id} |
+| PUT | http://127.0.0.1:8000/api/products/{id} |
+| DELETE | http://127.0.0.1:8000/api/products/{id} |
 
 ---
 
