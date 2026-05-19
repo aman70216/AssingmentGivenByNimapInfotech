@@ -20,6 +20,6 @@ class Product(Base):
     name = Column(String(100))
     price = Column(Float)
 
-    category_id = Column(Integer, ForeignKey("categories.id"))  #Implemented One -Many relation Here
+    category_id = Column(Integer, ForeignKey("categories.id"))  #Implemented One -TO-Many relation Here BY Using foreignKey 
 
     category = relationship("Category", back_populates="products")
