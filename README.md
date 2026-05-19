@@ -139,6 +139,7 @@ One-to-Many
 ---
 
 # API Endpoints
+Importan Instruction Replace {id} with Number Other Wise It will Throw Error 
 
 ## Category APIs
 
