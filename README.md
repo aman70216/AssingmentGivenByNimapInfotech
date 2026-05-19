@@ -1,8 +1,20 @@
-# Below is Steps to run Application
+# FastAPI CRUD Assignment
 
-## GitHub Repo Link
+This project is developed using FastAPI, SQLAlchemy, and MySQL.
+
+It includes:
+- Category CRUD APIs
+- Product CRUD APIs
+- One-to-Many relationship
+- Pagination
+- Swagger Documentation
+
+---
+
+# GitHub Repository
 
 Repo Link:
+
 ```bash
 https://github.com/aman70216/AssingmentGivenByNimapInfotech
 ```
@@ -19,7 +31,7 @@ git clone https://github.com/aman70216/AssingmentGivenByNimapInfotech.git
 
 ---
 
-## 2. Move to Project Directory
+## 2. Move to Project Folder
 
 ```bash
 cd fastapi-crud-assignment
@@ -27,7 +39,7 @@ cd fastapi-crud-assignment
 
 ---
 
-## 3. Create Virtual Environment Venv
+## 3. Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -35,7 +47,7 @@ python -m venv venv
 
 ---
 
-## 4. Activate virtual environment enter the below command in terminal
+## 4. Activate Virtual Environment
 
 ### Windows
 
@@ -45,7 +57,7 @@ venv\Scripts\activate
 
 ---
 
-## 5. Install required dependencies
+## 5. Install Required Packages
 
 ```bash
 pip install -r requirements.txt
@@ -55,23 +67,25 @@ pip install -r requirements.txt
 
 # Database Configuration
 
-Use Mysql and configure it By replacing Your root with Your User Name and 992Aman* with your Password
-
-```python
-DATABASE_URL = "mysql+pymysql://root:992Aman*@localhost/ProductAndCategory"
-```
-
-Create database in MySQL:
+Create a MySQL database:
 
 ```sql
 CREATE DATABASE ProductAndCategory;
 ```
 
+Update database connection in `database.py` file:
+
+```python
+DATABASE_URL = "mysql+pymysql://root:yourpassword@localhost/ProductAndCategory"
+```
+
+Replace:
+- `root` with your MySQL username
+- `yourpassword` with your MySQL password
+
 ---
 
-# Server startup cmd
-
-Run the FastAPI server using:
+# Run the Server
 
 ```bash
 uvicorn app.main:app --reload
@@ -79,9 +93,9 @@ uvicorn app.main:app --reload
 
 ---
 
-# Swagger api Documentation
+# Swagger API Docs
 
-server starts successfully:
+After starting the server open:
 
 ```bash
 http://127.0.0.1:8000/docs
@@ -89,25 +103,25 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# Database design details
+# Database Design
 
-## Categories table
+## Categories Table
 
-| Column Name | Data Type | Description |
-|---|---|---|
-| id | Integer | Primary Key |
-| name | String | Category Name |
+| Column | Type |
+|---|---|
+| id | Integer |
+| name | String |
 
 ---
 
 ## Products Table
 
-| Column Name | Data Type | Description |
-|---|---|---|
-| id | Integer | Primary Key |
-| name | String | Product Name |
-| price | Float | Product Price |
-| category_id | Integer | Foreign Key referencing Categories table |
+| Column | Type |
+|---|---|
+| id | Integer |
+| name | String |
+| price | Float |
+| category_id | Integer (Foreign Key) |
 
 ---
 
@@ -120,34 +134,46 @@ Each Product belongs to one Category.
 Relationship Type:
 ```bash
 One-to-Many
-
 ```
+
+---
+
 # API Endpoints
 
 ## Category APIs
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | /api/categories | Get all categories with pagination |
-| POST | /api/categories | Create category |
-| GET | /api/categories/{id} | Get category by id |
-| PUT | /api/categories/{id} | Update category |
-| DELETE | /api/categories/{id} | Delete category |
+| Method | Endpoint |
+|---|---|
+| GET | /api/categories |
+| POST | /api/categories |
+| GET | /api/categories/{id} |
+| PUT | /api/categories/{id} |
+| DELETE | /api/categories/{id} |
 
 ---
 
 ## Product APIs
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | /api/products | Get all products with pagination |
-| POST | /api/products | Create product |
-| GET | /api/products/{id} | Get product by id |
-| PUT | /api/products/{id} | Update product |
-| DELETE | /api/products/{id} | Delete product |
+| Method | Endpoint |
+|---|---|
+| GET | /api/products |
+| POST | /api/products |
+| GET | /api/products/{id} |
+| PUT | /api/products/{id} |
+| DELETE | /api/products/{id} |
+
 ---
-# Pagination
-Pagination is implemented using query parameters.
+
+# Features
+
+- CRUD Operations
+- Server-side Pagination
+- SQLAlchemy ORM
+- MySQL Database
+- FastAPI Swagger Docs
+- Category and Product Relationship
+
+---
 
 # Technologies Used
 
@@ -159,16 +185,5 @@ Pagination is implemented using query parameters.
 - Uvicorn
 
 ---
----
 
-# Features
-
-- Category CRUD APIs
-- Product CRUD APIs
-- One-to-Many relationship between Category and Product
-- Server-side pagination
-- ORM implementation using SQLAlchemy
-- Swagger API documentation
-
----
-# Built by Aman Mishra 
+Built by Aman Mishra
