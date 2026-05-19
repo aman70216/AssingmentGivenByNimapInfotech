@@ -34,7 +34,7 @@ git clone https://github.com/aman70216/AssingmentGivenByNimapInfotech.git
 ## 2. Move to Project Folder
 
 ```bash
-cd fastapi-crud-assignment
+cd AssingmentGivenByNimapInfotech
 ```
 
 ---
