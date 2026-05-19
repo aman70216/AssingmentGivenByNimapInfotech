@@ -14,7 +14,7 @@ SessionLocal = sessionmaker(
 
 Base = declarative_base()
 
-def get_db():     #FastAPI dependency that provides a database session to My API
+def get_db():     #I use this Because FastAPI dependency that provides a database session to My API
     db = SessionLocal()
     try:
         yield db
