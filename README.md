@@ -145,7 +145,7 @@ One-to-Many
 | Method | Endpoint |
 |---|---|
 | GET | http://127.0.0.1:8000/api/categories |
-| POST | /api/categories |
+| POST | http://127.0.0.1:8000/api/categories |
 | GET | http://127.0.0.1:8000/api/categories/{id} |
 | PUT | http://127.0.0.1:8000/api/categories/{id} |
 | DELETE | http://127.0.0.1:8000/api/categories/{id} |
