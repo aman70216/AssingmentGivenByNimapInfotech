@@ -1,29 +1,4 @@
-# Submission Detail
----
-
-# Technologies Used
-
-- Python
-- FastAPI
-- SQLAlchemy
-- MySQL
-- Pydantic
-- Uvicorn
-
----
----
-
-# Features
-
-- Category CRUD APIs
-- Product CRUD APIs
-- One-to-Many relationship between Category and Product
-- Server-side pagination
-- ORM implementation using SQLAlchemy
-- Swagger API documentation
-
----
-
+# Below is to run Application
 
 ## GitHub Repo Link
 
@@ -39,7 +14,7 @@ https://github.com/aman70216/AssingmentGivenByNimapInfotech
 ## 1. Clone the Repository
 
 ```bash
-git clone <your-github-repository-link>
+git clone https://github.com/aman70216/AssingmentGivenByNimapInfotech.git
 ```
 
 ---
@@ -106,7 +81,7 @@ uvicorn app.main:app --reload
 
 # Swagger api Documentation
 
-After server starts successfully:
+server starts successfully:
 
 ```bash
 http://127.0.0.1:8000/docs
@@ -145,5 +120,55 @@ Each Product belongs to one Category.
 Relationship Type:
 ```bash
 One-to-Many
+
 ```
+# API Endpoints
+
+## Category APIs
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /api/categories | Get all categories with pagination |
+| POST | /api/categories | Create category |
+| GET | /api/categories/{id} | Get category by id |
+| PUT | /api/categories/{id} | Update category |
+| DELETE | /api/categories/{id} | Delete category |
+
+---
+
+## Product APIs
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /api/products | Get all products with pagination |
+| POST | /api/products | Create product |
+| GET | /api/products/{id} | Get product by id |
+| PUT | /api/products/{id} | Update product |
+| DELETE | /api/products/{id} | Delete product |
+---
+# Pagination
+Pagination is implemented using query parameters.
+
+# Technologies Used
+
+- Python
+- FastAPI
+- SQLAlchemy
+- MySQL
+- Pydantic
+- Uvicorn
+
+---
+---
+
+# Features
+
+- Category CRUD APIs
+- Product CRUD APIs
+- One-to-Many relationship between Category and Product
+- Server-side pagination
+- ORM implementation using SQLAlchemy
+- Swagger API documentation
+
+---
 # Built by Aman Mishra 
