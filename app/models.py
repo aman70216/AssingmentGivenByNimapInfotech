@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, ForeignKey
 from sqlalchemy.orm import relationship
 
-from app.database import Base    # Creating Table Here using python Object
+from app.database import Base    
 
 
 class Category(Base):
@@ -20,6 +20,6 @@ class Product(Base):
     name = Column(String(100))
     price = Column(Float)
 
-    category_id = Column(Integer, ForeignKey("categories.id"))  #Implemented One -TO-Many relation Here BY Using foreignKey 
+    category_id = Column(Integer, ForeignKey("categories.id"))  
 
     category = relationship("Category", back_populates="products")
