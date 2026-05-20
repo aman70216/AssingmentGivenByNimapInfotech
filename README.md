@@ -10,9 +10,14 @@ It includes:
 - Swagger Documentation
 
 ---
+#Swagger API Documentation Link(Live Link)
+```bash
+https://travele-production.up.railway.app/docs
+```
+Mam if you want to check whether the APIs are working or not you can use the link above.
+I have deployed the project on a cloud server and it is now live.
 
 # GitHub Repository
-
 Repo Link:
 
 ```bash
